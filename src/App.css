@@ -1,0 +1,13 @@
+.heading {
+  background-color: black;
+  color: azure;
+  padding-left: 20px;
+}
+
+.food-items {
+  background-color: aquamarine;
+  font-style: italic;
+  font-size: larger;
+  padding-left: 20px;
+  font-weight: 700;
+}
