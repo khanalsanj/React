@@ -1,0 +1,61 @@
+.container {
+  background-color: darkgray;
+}
+.heading-container {
+  border: 10px;
+  border-radius: 5px;
+  border-width: 20px;
+  padding-bottom: 20px;
+  margin: 5px;
+}
+
+.user-profile {
+  position: relative;
+  height: 30vh;
+  width: 30%;
+}
+
+.Avatar-container1 {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+.box-1 {
+  position: relative;
+  left: 50px;
+}
+.box-2 {
+  position: relative;
+  left: 450px;
+}
+.box-3 {
+  position: relative;
+  left: 500px;
+}
+
+.Image-1 {
+  position: relative;
+  right: 55px;
+}
+
+.Image-2 {
+  position: relative;
+  right: 55px;
+}
+
+.text-1 {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.text-2 {
+  text-align: center;
+  padding-top: 5px;
+  color: darkgray;
+}
+
+.Avatar-container2 {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
