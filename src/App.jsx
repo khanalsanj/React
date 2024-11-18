@@ -20,6 +20,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Agencies from "./Components/Agencies";
+import Jobseekers from "./Components/Jobseekers";
 
 function App() {
   // Array of foodItems
@@ -64,7 +65,8 @@ function App() {
             </Routes>
           </Box>
         </Router> */}
-        <Agencies></Agencies>
+        {/* <Agencies></Agencies> */}
+        <Jobseekers></Jobseekers>
       </ChakraProvider>
       {/* <h1 className="heading">Healthy Foods</h1> */}
       {/* <FoodItems items={foodItems}></FoodItems> */}
