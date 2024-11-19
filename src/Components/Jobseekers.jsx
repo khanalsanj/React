@@ -23,7 +23,8 @@ import {
   InputGroup,
 } from "@chakra-ui/react";
 import { HamburgerIcon, SearchIcon } from "@chakra-ui/icons";
-import { MdDelete, MdEditSquare } from "react-icons/md";
+
+import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 
 const Jobseekers = () => {
   return (
@@ -157,10 +158,10 @@ const Jobseekers = () => {
                   <Td>Incompleted</Td>
                   <Td>5 min ago</Td>
                   <Td>
-                    <Icon fontSize={"20px"}>icon={<MdEditSquare />}</Icon>
+                    <Icon fontSize={"20px"}>icon={<AiOutlineEdit />}</Icon>
                   </Td>
                   <Td>
-                    <Icon fontSize={"20px"}>icon={<MdDelete />}</Icon>
+                    <Icon fontSize={"20px"}>icon={<AiOutlineDelete />}</Icon>
                   </Td>
                 </Tr>
               </Tbody>
