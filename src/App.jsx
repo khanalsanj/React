@@ -7,20 +7,16 @@ import { ChakraProvider, Box } from "@chakra-ui/react";
 // import Button from "./Components/Button";
 // import { Button } from "@chakra-ui/react";
 // import LoginForm from "./Components/LoginPage";
-// import FormUi from "./Components/FormUi";
+import FormUi from "./Components/FormUi";
 // import DashBoard from "./Components/DashBoard";
 import SideBar from "./Components/SideBar";
 // import Dash from "./Components/Dash";
 import Aspire from "./Components/Aspire";
 // import Grid from "./Components/Grid";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Agencies from "./Components/Agencies";
 import Jobseekers from "./Components/Jobseekers";
+import Psidebar from "./Components/Psidebar";
 
 function App() {
   // Array of foodItems
@@ -41,7 +37,7 @@ function App() {
         {/* <TheRestOfYourApplication /> */}
         {/* <Button>clicked</Button> */}
         {/* <LoginForm /> */}
-        {/* <FormUi></FormUi> */}
+        <FormUi></FormUi>
         {/* <DashBoard /> */}
         {/* <SideBar /> */}
         {/* <Grid></Grid> */}
@@ -65,8 +61,22 @@ function App() {
             </Routes>
           </Box>
         </Router> */}
+
+        {/* <Router> */}
+        {/* <Psidebar></Psidebar> */}
+        {/* <Routes>
+            <Route path="/" element={<div></div>} />
+            <Route path="/about" element={<div></div>} />
+            <Route path="/skills" element={<div>Skills</div>} />
+            <Route path="/education" element={<div>Education</div>} />
+            <Route path="/experiences" element={<div>Experiences</div>} />
+            <Route path="/contact" element={<div>Contact</div>} />
+          </Routes> */}
+        {/* </Router> */}
+
         {/* <Agencies></Agencies> */}
-        <Jobseekers></Jobseekers>
+        {/* <Jobseekers></Jobseekers> */}
+        {/* <Psidebar></Psidebar> */}
       </ChakraProvider>
       {/* <h1 className="heading">Healthy Foods</h1> */}
       {/* <FoodItems items={foodItems}></FoodItems> */}

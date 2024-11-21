@@ -3,7 +3,6 @@ import React from "react";
 // import { Line } from "react-chartjs-2./Line";
 // import { Bar } from "react-chartjs-2./Bar";
 // import { BarChart } from "apexcharts";
-import ApexCharts from "apexcharts";
 
 export const LineChart = () => {
   const data = {

@@ -36,7 +36,7 @@ const Sidebar = () => {
 
   return (
     <Box
-      as="nav"
+      as="aside"
       pos="fixed"
       left="0"
       top="0"
