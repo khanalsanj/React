@@ -17,6 +17,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Agencies from "./Components/Agencies";
 import Jobseekers from "./Components/Jobseekers";
 import Psidebar from "./Components/Psidebar";
+import Signup from "./Components/Signup";
+import UseFieldArray from "./Components/DynamicField";
+import DynamicField from "./Components/DynamicField";
 
 function App() {
   // Array of foodItems
@@ -37,7 +40,9 @@ function App() {
         {/* <TheRestOfYourApplication /> */}
         {/* <Button>clicked</Button> */}
         {/* <LoginForm /> */}
-        <FormUi></FormUi>
+        {/* <FormUi></FormUi> */}
+        {/* <Signup></Signup> */}
+        <DynamicField></DynamicField>
         {/* <DashBoard /> */}
         {/* <SideBar /> */}
         {/* <Grid></Grid> */}

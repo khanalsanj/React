@@ -8,6 +8,7 @@ import {
   Image,
   Link,
   FormControl,
+  Flex,
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -22,13 +23,7 @@ const schema = yup.object({
       "Email is not valid."
     ),
 
-  password: yup
-    .string()
-    .required("Password is required.")
-    .matches(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,50}$/,
-      "Minimum eight and maximum 10 characters, at least one uppercase letter, one lowercase letter, one number and one special character"
-    ),
+  password: yup.string().required("Password is required."),
 });
 
 const FormUi = () => {
@@ -120,8 +115,9 @@ const FormUi = () => {
           <Button colorScheme="blue" type="submit" size="lg">
             Login
           </Button>
-          <span>Don't have an account? </span>
-          <Link color="blue.500">Sign Up</Link>
+          <Flex>
+            Don't have an account? <Link color="blue.500">Sign Up</Link>
+          </Flex>
         </Stack>
       </form>
     </Box>

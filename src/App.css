@@ -3,3 +3,11 @@
 /* color: azure; */
 /* padding-left: 20px; */
 /* } */
+
+.deleted {
+  background-color: floralwhite;
+  color: black;
+  border-radius: 4px;
+  font-size: medium;
+  font-weight: 400;
+}
