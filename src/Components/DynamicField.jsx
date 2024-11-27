@@ -6,7 +6,6 @@ import {
   Button,
   Stack,
   Flex,
-  Spacer,
 } from "@chakra-ui/react";
 
 import { useForm, useFieldArray } from "react-hook-form";
@@ -50,27 +49,28 @@ const DynamicField = () => {
     >
       <form onSubmit={handleSubmit(onsubmit)}>
         <Stack spacing={3}>
-          <Flex m={2} flexDirection="column" justifyContent={"space-between"}>
+          <Flex flexDirection="column" justifyContent={"space-between"}>
             {fields.map((field, index) => (
               <div key={field.id}>
                 <FormControl id="user name" mb={4}>
-                  <FormLabel>User Name</FormLabel>
+                  <FormLabel htmlFor="user name">User Name</FormLabel>
                   <Input
                     {...register(`users.${index}.userName`, {
+                      minLength: 5,
                       required: "User Name is required",
                     })}
                     type="text"
                     placeholder="User Name"
                   />
                   {errors.users?.[index]?.userName && (
-                    <p style={{ color: "red" }}>
+                    <p role="alert" style={{ color: "red" }}>
                       {`${errors.users?.[index]?.userName?.message}`}
                     </p>
                   )}
                 </FormControl>
 
                 <FormControl id="quantity" marginBottom={4}>
-                  <FormLabel>Quantity</FormLabel>
+                  <FormLabel htmlFor="quantity">Quantity</FormLabel>
                   <Input
                     {...register(`users.${index}.quantity`, {
                       required: "Quantity is required",
@@ -79,12 +79,18 @@ const DynamicField = () => {
                     placeholder="Quantity"
                   />
                   {errors.users?.[index]?.quantity && (
-                    <p style={{ color: "red" }}>
+                    <p role="alert" style={{ color: "red" }}>
                       {`${errors.users?.[index]?.quantity?.message}`}
                     </p>
                   )}
                 </FormControl>
-
+                <button
+                  className="Add-user"
+                  type="button"
+                  onClick={() => append({})}
+                >
+                  Add User
+                </button>
                 <button
                   className="deleted"
                   type="button"
@@ -96,9 +102,9 @@ const DynamicField = () => {
             ))}
           </Flex>
 
-          <button type="button" onClick={() => append({})}>
+          {/* <button className="Add-user" type="button" onClick={() => append({})}>
             Add User
-          </button>
+          </button> */}
 
           <Button colorScheme="blue" type="submit" size="lg">
             login

@@ -5,9 +5,51 @@
 /* } */
 
 .deleted {
-  background-color: floralwhite;
-  color: black;
+  background-color: rgb(62, 118, 222);
+  color: white;
   border-radius: 4px;
-  font-size: medium;
+  font-size: 18px;
   font-weight: 400;
+  padding: 8px 20px;
+  font-style: normal;
+  text-align: center;
+}
+
+.deleted {
+  transition-duration: 0.4s;
+}
+
+.deleted:hover {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.deleted:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Add-user {
+  background-color: rgb(62, 118, 222);
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px 20px;
+  font-style: normal;
+  margin-right: 3%;
+  text-align: center;
+}
+.Add-user:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Add-user {
+  transition-duration: 0.4s;
+}
+
+.Add-user:hover {
+  background-color: #04aa6d; /* Red */
+  color: white;
 }
