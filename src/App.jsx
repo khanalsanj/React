@@ -20,6 +20,13 @@ import Psidebar from "./Components/Psidebar";
 import Signup from "./Components/Signup";
 import UseFieldArray from "./Components/DynamicField";
 import DynamicField from "./Components/DynamicField";
+import UseFormContext from "./UseFormContext";
+import TutorialState from "./context/tutorial/TutorialContextProvider";
+import About from "./Components/About";
+import TutorialContextProvider from "./context/tutorial/TutorialContextProvider";
+import Login from "./Components/Login";
+import { ConnectForm } from "./Components/ConnectForm";
+import UserContextProvider from "./context/User/UserContextProvider";
 
 function App() {
   // Array of foodItems
@@ -35,14 +42,19 @@ function App() {
   //   return <h3>Still Starving</h3>;
   // }
   return (
-    <>
+    <UserContextProvider>
+      {/* // <TutorialContextProvider> */}
       <ChakraProvider>
+        {/* <About></About> */}
+        <Login></Login>
+        {/* <ConnectForm></ConnectForm> */}
         {/* <TheRestOfYourApplication /> */}
         {/* <Button>clicked</Button> */}
         {/* <LoginForm /> */}
         {/* <FormUi></FormUi> */}
         {/* <Signup></Signup> */}
-        <DynamicField></DynamicField>
+        {/* <DynamicField></DynamicField> */}
+        {/* <UseFormContext></UseFormContext> */}
         {/* <DashBoard /> */}
         {/* <SideBar /> */}
         {/* <Grid></Grid> */}
@@ -88,7 +100,8 @@ function App() {
       {/* <ErrorMessage items={foodItems}></ErrorMessage> */}
       {/* ternary operator: value call : errorMessage ignored the undefiend, null, empty, and gives <h3>Still Starving.</h3> */}
       {/* {errorMessage} */}
-    </>
+      {/* // </TutorialContextProvider> */}
+    </UserContextProvider>
   );
 }
 

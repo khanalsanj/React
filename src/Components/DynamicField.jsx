@@ -9,29 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { useForm, useFieldArray, useWatch } from "react-hook-form";
 import "../App.css";
-import { useState, useEffect } from "react";
-
-// const localStorage = (Quantity, quantity) => {
-//   const [currentQuantity, setQuantity] = useState(() => {
-//     let currentQuantity;
-
-//     try {
-//       currentQuantity = JSON.parse(
-//         localStorage.getItem(Quantity) || String(quantity)
-//       );
-//     } catch (error) {
-//       currentQuantity = quantity;
-//     }
-
-//     return currentQuantity;
-//   });
-
-//   useEffect(() => {
-//     localStorage.setItem(Quantity, JSON.stringify(quantity));
-//   }, [quantity, Quantity]);
-
-//   return [quantity, setQuantity];
-// };
+import { useEffect } from "react";
 
 const DynamicField = () => {
   const {
@@ -96,6 +74,7 @@ const DynamicField = () => {
                     type="text"
                     placeholder="User Name"
                   />
+
                   {/* Errors Alert */}
                   {errors.users?.[index]?.userName && (
                     <p role="alert" style={{ color: "red" }}>
@@ -118,6 +97,7 @@ const DynamicField = () => {
                     type="text"
                     placeholder="Quantity"
                   />
+
                   {/* Errors Alert */}
                   {errors.users?.[index]?.quantity && (
                     <p role="alert" style={{ color: "red" }}>
